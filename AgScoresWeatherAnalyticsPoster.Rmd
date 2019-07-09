@@ -1,10 +1,10 @@
 ---
-title: A short title that describes your work
-business_unit: Business Unit
-theme: midday #options are midday, blueberry, sky, teal, mint, and forest
+title: AgScores Weather Analytics
+business_unit: Agriculture and Food
+theme: sky #options are midday, blueberry, sky, teal, mint, and forest
 
-author:  "**Your Name**"
-github_link: www.github.com/user/project
+author:  "**Eva Zinkovsky**"
+github_link: www.github.com/EvaZinkovsky/poster
 dap_link: https://doi.org/10.4225/08/5756169E381CC # optional
 photo: resources/img/photo.jpeg
 
