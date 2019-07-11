@@ -6,7 +6,7 @@ theme: sky #options are midday, blueberry, sky, teal, mint, and forest
 author:  "**Eva Zinkovsky**"
 github_link: www.github.com/EvaZinkovsky/poster
 dap_link: https://doi.org/10.4225/08/5756169E381CC # optional
-photo: resources/img/photo.jpeg
+photo: resources/img/photo1.jpg
 
 title_textsize: 140pt         # Poster title fontsize
 
@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
   echo = FALSE,
   warning = FALSE,
   message = FALSE,
-  fig.align = 'center'
+  fig.align = 'centre'
 )
 
 #Load libraries
@@ -35,50 +35,50 @@ library(tidyverse)
 library(gapminder)
 library(gganimate)
 library(kableExtra)
+library(knitr)
+library(jpeg)
+library(png)
 ```
 
 
-# Introduction
-Who am I? Where am I from? Could I code before Data School? What did my daily work pattern look like 
-before Data School? Etc. The text you write here will be placed above the
-two column format of the rest of the poster. Don't change the section title from "Introduction" 
-otherwise it won't work.
+# Introduction 
+I started Data School as an Administration Officer for Program 8.As of the first of July our program merged with Program 7. The new program is called Agri-food Systems, Landscapes and Global Change and I have a new role which will ensure best practice data archiving and management systems for our program. I will also be embedded into projects to provide project, data and analytic support. :)
 
 # My Synthesis Project
-This is the space to introduce your project in a few sentences. What were your goals, what was your 
-data, how did you plan to approach it?
+This project will produce visualisations of statistical comparisons between\s\s 
 
-This poster template is built with modifications from the `posterdown` package. You will need this 
-installed if you wish to build your own poster. For complete installation instructions visit the 
-[GitHub repo](https://github.com/brentthorne/posterdown), or to dive straight in, you can try
-`remotes::install_github("brentthorne/posterdown")`.
+  * weather observation data provided by the State of Queensland (SILO database) SILO © The State of Queensland 2019. The Queensland Government supports and encourages the distribution of its material. Unless otherwise noted, all copyright material available on or through this website is licensed under a Creative Commons Attribution 4.0
+International licence (CC BY 4.0). https://www.longpaddock.qld.gov.au/silo/about.html
+and\s\s
 
-In order to build this demo poster correctly, you will also need to have installed the `tidyverse`, 
-`gapminder`, `gganimate`, and `kableExtra` packages.
+  * weather forecast data from the Bureau of Meteorology (ACCESS-S forecast model) ACCESS-S Hudson et al, ACCESS-S1: The new Bureau of Meteorology multi-week to seasonal prediction system, 2017,
+http://www.bom.gov.au/jshess/docs/2017/Hudson.pdf Operational Implementation of ACCESS-S1 Seasonal Prediction System,
+http://www.bom.gov.au/australia/charts/bulletins/apob120_external.pdf
+
+Only one location will be used latitude=-35.99 & longitude=142.92, Birchip, Victoria https://dcdp.research.csiro.au/access-s?lat=-35.99&lon=142.92&format=csv&start=
+
+AgScores will produce results to inform climate scientists of the efficacy of climate predictions, from the point of view of Agricultural productivity (wheat yield potential). This work enables climate scientists to debug their climate models when their predicted wheat yield potential does not match the predicted wheat yield potential of APSIM + SILO.
 
 # My Digital Toolbox
 
-What digital tools have you been using in your project? Which ones have you learned since starting 
-Data School?
-
-You can use all the usual R markdown features in writing a poster including:
-
-* R - dplyr, ggplot, ...
-* Python
-* SQL
+I have used Python, Anaconda, Jupyter, xarray, requests, io, pandas, datetime, numpy, Matplotlib, from mpl_toolkits.mplot3d import Axes3D, Seaborn, scipy.stats, regex
 
 ## Favourite tool (optional)
 
-Is there any tool in particular that you've enjoyed using? Give it a special shout out here.
+I have a couple of favourite tools. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat augue at velit tincidunt 
-semper. Donec elementum porta posuere. Nullam interdum, odio at tincidunt feugiat, turpis nisi 
-blandit eros, eu posuere risus felis non quam. Nam eget lorem odio.
+![](resources/img/regex.jpg){width=100px style="float: left; margin: 2%"} allows you to pull out the exact subset of data that you need.
+
+The second is matplotlib which allows you to make lovely visualisations from your data. ![](resources/img/matplotlib.png){width=200px style="float: left; margin: 2%"}
 
 # My time went ...
 
-What parts of the project took the most time and effort? Were there any surprising challenges you
-encountered, and how did you solve them?
+by manipulating data to get it into shape. And then reshaping it to get it right again. I had help with the correct commands to pull the data out of the databases and then I was responsible for doing the manipulations.
+
+and making plot after plot after plot. Most of these didn't really see the light of day but some are here on the poster and will help help to make the AgScores tool easier to use and interpret.
+
+Embarrassingly, I spent a lot of time trying to work out paths to where my work was stored.![](resources/img/emoji.jpg){width=200px style="float: right; margin: 2%"} 
+
 
 # Next steps
 
@@ -86,10 +86,7 @@ What further steps do you wish your project could take? Or are there any new dig
 are keen to develop as a result of the work on your synthesis project?
 
 The second half of the poster will demonstrate the different visuals you might use to show off your 
-data. To get tables formatting correctly, use `knitr::kable` to convert the table to html format. If
-you also want to have alternate row highlighting, pass the result to `kable_styling('striped')` 
-from the `kableExtra` package.
-
+data. To get tables formatting correctly, use `knitr::kable` to convert the table to html format. If=====
 To make sure your content distributes across the two columns correctly, you may need to add some 
 additional line breaks at this point to separate the text from the visuals:
 
