@@ -42,7 +42,7 @@ library(png)
 
 
 # Introduction 
-I started Data School as an Administration Officer for Program 8.As of the first of July our program merged with Program 7. The new program is called Agri-food Systems, Landscapes and Global Change and I have a new role which will ensure best practice data archiving and management systems for our program. I will also be embedded into projects to provide project, data and analytic support. :)
+I started Data School as an Administration Officer for Program 8. As of the first of July our program merged with Program 7. The new program is called Agri-food Systems, Landscapes and Global Change and I have a new role which will ensure best practice data archiving and management systems for our program. I will also be embedded into projects to provide project, data and analytic support. :)
 
 # My Synthesis Project
 This project will produce visualisations of statistical comparisons between\s\s 
@@ -68,43 +68,53 @@ I have used Python, Anaconda, Jupyter, xarray, requests, io, pandas, datetime, n
 I have a couple of favourite tools. 
 
 ![](resources/img/regex.jpg){width=100px style="float: left; margin: 2%"} allows you to pull out the exact subset of data that you need.
-
+  
 The second is matplotlib which allows you to make lovely visualisations from your data. ![](resources/img/matplotlib.png){width=200px style="float: left; margin: 2%"}
 
+       
 # My time went ...
 
 by manipulating data to get it into shape. And then reshaping it to get it right again. I had help with the correct commands to pull the data out of the databases and then I was responsible for doing the manipulations.
 
-and making plot after plot after plot. Most of these didn't really see the light of day but some are here on the poster and will help help to make the AgScores tool easier to use and interpret.
+...and making plot after plot after plot. Most of these didn't really see the light of day but some are here on the poster and will help help to make the AgScores tool easier to use and interpret. 
 
 Embarrassingly, I spent a lot of time trying to work out paths to where my work was stored.![](resources/img/emoji.jpg){width=200px style="float: right; margin: 2%"} 
 
 
+
+
+
+
 # Next steps
 
-What further steps do you wish your project could take? Or are there any new digital skills that you
-are keen to develop as a result of the work on your synthesis project?
-
-The second half of the poster will demonstrate the different visuals you might use to show off your 
-data. To get tables formatting correctly, use `knitr::kable` to convert the table to html format. If=====
-To make sure your content distributes across the two columns correctly, you may need to add some 
-additional line breaks at this point to separate the text from the visuals:
+I need to plot more metrics that are useful and will tell a story. It would be good to develop a GUI to make the tool even easier to use. R Shiny is a good tool for this but the code needs to be in python. There are a few platforms to choose from - PYQT5, Tkinter, WxPython, Kivy and PyForms. Tkinter seems to be the most popular. 
 
 <br/>
 <br/>
 <br/>
 
-**Tables**
-```{r mytable, out.width='100%', echo = T}
-knitr::kable(head(gapminder, n = 5), format = "html") %>% 
-  kable_styling("striped")
-```
+# Tables
 
-**Images from a file**
+## Table of header from final data frame after manipulations
 
-![](resources/img/posterdownlogo.png){width=180px}
+![](resources/img/table.png){width=100%}
 
-**Plots from R**
+
+# Plots
+
+## Density Graphs of Weather Variables which compare Forecast(ensemble) data with Observed(silo) data
+
+![](resources/img/Untitled2.png){width=600px style="float: left; margin: 2%"}  ![](resources/img/Untitled3.png){width=600px style="float: right; margin: 2%"}
+
+
+## --
+
+
+![](resources/img/Untitled.png){width=600px style="float: left; margin: 2%"} ![](resources/img/Untitled4.png){width=600px style="float: right; margin: 2%"}
+
+
+
+
 ```{r standard-plot, out.width='100%', fig.align='center', fig.height= 3, fig.width=8}
 gapminder %>% 
   filter(year == 1987) %>% 
