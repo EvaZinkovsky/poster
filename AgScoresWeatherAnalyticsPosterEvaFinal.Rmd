@@ -39,7 +39,6 @@ library(knitr)
 library(jpeg)
 library(png)
 library(reticulate)
-
 ```
 
 
@@ -49,7 +48,7 @@ I started Data School as an Administration Officer for Program 8 with no real ex
 # My Synthesis Project
 This project will produce visualisations of statistical comparisons between\s\s 
 
-  * weather observation data provided by the State of Queensland (SILO database) SILO 
+  * weather observation data provided by the State of Queensland (SILO database)
 
   * weather forecast data from the Bureau of Meteorology (ACCESS-S forecast model) 
 
