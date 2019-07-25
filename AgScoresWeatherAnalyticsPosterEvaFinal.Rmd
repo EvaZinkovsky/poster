@@ -5,7 +5,7 @@ theme: sky #options are midday, blueberry, sky, teal, mint, and forest
 
 author:  "**Eva Zinkovsky**"
 github_link: www.github.com/EvaZinkovsky/poster
-dap_link: https://doi.org/10.4225/08/5756169E381CC # optional
+#dap_link: https://doi.org/10.4225/08/5756169E381CC # optional
 photo: resources/img/photo1.jpg
 
 title_textsize: 140pt         # Poster title fontsize
@@ -39,6 +39,7 @@ library(knitr)
 library(jpeg)
 library(png)
 library(reticulate)
+
 ```
 
 
@@ -64,9 +65,11 @@ I have used R, Python, Anaconda, Jupyter, xarray, requests, io, pandas, datetime
 
 I have a couple of favourite tools. 
 
-![](resources/img/regex.jpg){width=100px style="float: left; margin: 2%"} allows you to pull out the exact subset of data that you need.
-  
-The second is matplotlib which allows you to make lovely visualisations from your data. ![](resources/img/matplotlib.png){width=200px style="float: left; margin: 2%"}
+![](resources/img/regex.jpg){width=100px style="float: left; margin-right: 2%"} 
+allows you to pull out the exact subset of data that you need.
+
+![](resources/img/matplotlib.png){width=200px style="float: left; margin-right: 2%"}
+The second is matplotlib which allows you to make lovely visualisations from your data. 
 
 # My time went ...
 
@@ -222,12 +225,12 @@ fcast_vs_obs.set_index('year_ensday', inplace=True)
 ```{r}
 #USE r TO DISPLAY THE TABLE - kableExtra
 #knitr::kable(table.attr = "style='width:30%;'")
-knitr::kable(head(py$fcast_vs_obs), table.attr = "style='width:20%;'") %>% 
+knitr::kable(head(py$fcast_vs_obs), table.attr = "style='width:20%;'", row.names = F) %>% 
   kable_styling( 
     bootstrap_options = c("striped")
     )
 ```
-### Table 1. Combined ENSEMBLE and SILO data dataframe (header only)
+**Table 1. Combined ENSEMBLE and SILO data dataframe (header only)**
 
 # Plots
 ```{python pyplot, echo=FALSE, results = "hide"}
@@ -285,7 +288,7 @@ ax4.grid(color='gray', linewidth=0.5)
 #plt.show()
 plt.savefig('resources/img/kdeplots.png')
 ``````
-### Figure 1. Density Graphs comparing Forecast (ensemble) data with Observed (silo) data
+**Figure 1. Density Graphs comparing Forecast (ensemble) data with Observed (silo) data**
 ![](resources/img/kdeplots.png){width=1200px}
 
 # Acknowledgements
@@ -306,7 +309,7 @@ My Family: Alex, Christina and Julia xxx
 
 # My Data School Experience
 
-I thought Data School was a fantastic experience. To have the opportunity to spend five months learning something new in a course that was run totally in-house was an unbelievable opportunity. I really enjoyed the comaraderie with the other students and the freedom to study again. The course facilitators were all very knowledgeable and very patient! I enjoyed pretty much all that we covered. (Stats was hard)
+I thought Data School was a fantastic experience. To have the opportunity to spend five months learning something new in a course that was run totally in-house was an unbelievable opportunity. I really enjoyed the camaraderie with the other students and the freedom to study again. The course facilitators were all very knowledgeable and very patient! I enjoyed pretty much all that we covered. (Stats was hard)
 
 I have just started a newly created Program Data Support position for our program which will put many of my newly acquired skills to use. I will be liaising with project leaders at inception to assist them in creating Data and Software Management Plans and again at end of projects to confirm data and records archival. I have received very supportive correspondence from program members who are looking forward to working with me to achieve this.
 
